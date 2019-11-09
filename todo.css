@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu&display=swap');
+
+body {
+	background: black;
+}
+
+.M_block {
+	height: 70px;
+	width: 900px;
+	top: 40px;
+	left: 200px;
+	cursor: pointer;
+	position: absolute;
+	background: red;
+	transition: .8s;
+	-o-transition: .8s;
+	-mozila-transition: .8s;
+	-webkit-transition: .8s;
+	display: none;
+}
+
+.M_block #t {
+	font-size: 25px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+}
+
+.M_block:hover {
+	opacity: .7;
+}
+
+.M_block.show_m {
+	display: block;
+}
+
+
+.pole_block {
+	height: 100px;
+	width: 1200px;
+	position: absolute;
+	top: 150px;
+	left: 200px;
+}
+
+.pole_block #inpt {
+	height: 100px;
+	width: 900px;
+	border: 2px solid white;
+	font-size: 45px;
+	font-family: 'Roboto Slab', serif;
+	cursor: pointer;
+}
+
+.pole_block .add {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    font-size: 35px;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    background: white;
+    border: 0;
+    transition: .8s;
+    -o-transition: .8s;
+    -mozila-transition: .8s;
+    -webkit-transition: .8s;
+    top: 5px;
+}
+
+.pole_block .add:hover {
+	box-shadow: 0 0 15px white;
+	transform: scale(.9);
+}
+
+.pole_block .add:active {
+	transform: scale(.8);
+}
+
+.pole_block .hide_all {
+	height: 100px;
+	width: 200px;
+	position: relative;
+	float: right;
+	cursor: pointer;
+	font-size: 25px;
+	color: black;
+	font-family: 'Roboto Slab', serif;
+    background: white;
+    border: 0;
+    transition: .8s;
+    -o-transition: .8s;
+    -mozila-transition: .8s;
+    -webkit-transition: .8s;
+    top: 100px;
+}
+
+.pole_block .hide_all:hover {
+	box-shadow: 0 0 15px white;
+	transform: scale(.9);
+}
+
+.pole_block .hide_all:active {
+	transform: scale(.8);
+}
+
+.Container {
+	height: 180px;
+    width: 900px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+
+.block {
+	height: 150px;
+	width: 900px;
+	position: relative;
+	margin-left: 0;
+	margin-top: 20px;
+	background: white;
+}
+
+.block.hide2 {
+	display: none;
+}
+
+.block .Span {
+	font-size: 47px;
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	left: 10px;
+	top: 40px;
+}
+
+.block .Span.cherk {
+	text-decoration: line-through;
+}
+
+.block .busket_b {
+	height: 90px;
+	width: 90px;
+	position: relative;
+	border: 5px solid black;
+	float: right;
+	right: 25px;
+	top: 25px;
+	cursor: pointer;
+	z-index: 4;
+	transition: .8s;
+	-o-transition: .8s;
+	-mozila-transition: .8s;
+	-webkit-transition: .8s;
+}
+
+.block .busket_b:hover {
+	border-color: white;
+}
+
+.block .busket_b .busket {
+	font-size: 85px;
+	position: absolute;
+	color: red;
+	left: 2px;
+	top: 4px;
+	text-shadow: 0 0 10px red;
+	transition: .8s;
+	-o-transition: .8s;
+	-webkit-transition: .8s;
+	-mozila-transition: .8s;
+}
+
+.block .busket_b .busket:hover {
+	text-shadow: 0 0 25px red;
+	transform: scale(.8);
+}
+
+.block .status {
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	top: 120px;
+	left: 10px;
+}
+
+.block .Time_b {
+	height: 150px;
+	width: 900px;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 3;
+	background: rgba(0,0,0,.6);
+	display: none;
+}
+
+.block .Time_b .time {
+	color: white;
+	position: absolute;
+	font-size: 55px;
+	font-family: 'Ubuntu', sans-serif;
+	top: 40px;
+	left: 210px;
+}
+
+.block .Time_b .plus_block {
+	height: 90px;
+	width: 90px;
+	position: absolute;
+	border: 5px solid black;
+	left: 25px;
+	top: 25px;
+	cursor: pointer;
+	transition: .8s;
+	-o-transition: .8s;
+	-mozila-transition: .8s;
+	-webkit-transition: .8s;
+}
+
+.block .Time_b .plus_block:hover {
+	border-color: white;
+}
+
+.block .Time_b .plus_block .plus {
+	font-size: 85px;
+	position: absolute;
+	color: lime;
+	left: 8px;
+	top: 4px;
+	text-shadow: 0 0 10px lime;
+	transition: .8s;
+	-o-transition: .8s;
+	-webkit-transition: .8s;
+	-mozila-transition: .8s;
+}
+
+.block .Time_b .plus_block:hover .plus {
+	text-shadow: 0 0 25px lime;
+	transform: rotate(180deg);
+}
+
+.block .Time_b .plus_block .plus.rot {
+	transform: rotate(360deg);
+	transform: scale(.7);
+}
+
+.block .Time_b.show2 {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
